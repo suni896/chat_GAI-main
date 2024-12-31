@@ -1,0 +1,16 @@
+Name,Message,Timestamp
+lily,has entered the room,2024-12-31 17:10:30
+lily HUMAN_____^^^,hello,2024-12-31 17:10:34
+Bob,Hello! How can I help you with climate change questions or misconceptions today?,2024-12-31 17:10:42
+Anna,Hello Lily! Let's dive into the economics of climate change. What specific assumption or topic would you like to discuss or challenge first?,2024-12-31 17:10:49
+Group Manager,"lily, please speaking",2024-12-31 17:10:53
+lily HUMAN_____^^^,sea level changing,2024-12-31 17:11:09
+Bob,"Sea levels are rising due to two main factors: melting ice sheets/glaciers and thermal expansion of seawater as it warms. This contributes to coastal erosion, more frequent flooding, and loss of habitat for species.",2024-12-31 17:11:43
+Group Manager,"lily, please speaking",2024-12-31 17:11:43
+lily HUMAN_____^^^,yes true,2024-12-31 17:13:30
+Anna,Isn't it possible that the economic cost of protecting against sea level rise is exaggerated? Couldn’t investment in technology and infrastructure potentially mitigate the impacts more efficiently than predicted?,2024-12-31 17:13:38
+Group Manager,"lily, please speaking",2024-12-31 17:13:42
+tom,has entered the room,2024-12-31 17:14:00
+tom HUMAN_____^^^,morning,2024-12-31 17:14:05
+Bob,"Good morning! Rising sea levels are an important issue caused by climate change. Accurate predictions and investments in resilient infrastructure are crucial to minimize impacts, such as protecting coastal communities and ecosystems.",2024-12-31 17:14:38
+Group Manager,"tom, please speaking",2024-12-31 17:14:38

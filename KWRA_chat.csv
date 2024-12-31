@@ -1,0 +1,9 @@
+Name,Message,Timestamp
+lily,has entered the room,2024-12-27 14:37:53
+lily HUMAN_____^^^,hello,2024-12-27 14:37:59
+Bob,Hello! How can I help you with climate change information today?,2024-12-27 14:38:17
+Anna,Lily: hello,2024-12-27 14:38:36
+Bob,Hello! How can I assist you with information on climate change?,2024-12-27 14:38:53
+lily HUMAN_____^^^,how about sea level rising,2024-12-27 14:39:20
+Anna,"[{""name"": ""client"", ""message"": ""Hi, I'm trying to understand the economic impacts of climate change.""}, {""name"": ""advocate"", ""message"": ""Of course, but are the projections on economic costs of climate change possibly exaggerated to push for more urgent actions?""}]",2024-12-27 14:39:24
+Anna,"[{""role"": ""assistant""], ""content"": ""Sure, but is it possible that the economic benefits of fossil fuels are being underrepresented when discussing the transition to renewable energy?""}",2024-12-27 14:39:38

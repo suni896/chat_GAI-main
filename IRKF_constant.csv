@@ -1,0 +1,4 @@
+Key,Value
+thread_manager,<coroutine object create_thread_ai_assistant at 0x159105140>
+thread_assistant_1,<coroutine object create_thread_ai_assistant at 0x159105440>
+thread_assistant_2,<coroutine object create_thread_ai_assistant at 0x1591057c0>

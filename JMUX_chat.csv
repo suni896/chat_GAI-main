@@ -1,0 +1,16 @@
+Name,Message,Timestamp
+lily,has entered the room,2024-12-27 14:42:12
+lily HUMAN_____^^^,hello,2024-12-27 14:42:16
+Bob,Hello! How can I help you understand climate change better?,2024-12-27 14:42:33
+Group Manager,"lily, please speaking",2024-12-27 14:42:43
+lily HUMAN_____^^^,how about sea level rising,2024-12-27 14:42:55
+Bob,Sea levels are rising mainly due to thermal expansion (water expands as it warms) and melting ice from glaciers and ice sheets. This can lead to increased coastal flooding and erosion.,2024-12-27 14:43:38
+Group Manager,"lily, please speaking",2024-12-27 14:43:47
+lily,has entered the room,2024-12-27 14:43:57
+lily,has left the room,2024-12-27 14:44:03
+tom,has entered the room,2024-12-27 14:44:07
+tom HUMAN_____^^^,"hello guys, how can we control sea level rising?",2024-12-27 14:44:44
+Bob,"We can help control rising sea levels by reducing greenhouse gas emissions, using renewable energy, conserving energy, and protecting natural carbon sinks like forests and wetlands. These actions help to limit global warming and ice melt.",2024-12-27 14:45:04
+Anna,next_round,2024-12-27 14:45:27
+Anna,"How do you address the argument that implementing substantial climate policies could lead to significant short-term economic downturns, especially for developing countries?",2024-12-27 14:46:04
+Group Manager,"lily, please speaking",2024-12-27 14:46:13

@@ -12,10 +12,10 @@ import datetime
 import csv
 import os
 from dotenv import load_dotenv
-from openai import AzureOpenAI, api_key
+from openai import AzureOpenAI
 
 load_dotenv()
-eventlet.monkey_patch()
+
 NAME_PREFIX = "HUMAN_____^^^"
 THREAD_ARR = ["thread_manager","thread_assistant_1","thread_assistant_2"]
 MANAGER_ID = "asst_TGzKqOXlWpBQG7OaxsoidDjV"
@@ -299,41 +299,21 @@ async def home():
         if create != False:
             room = generate_unique_code(4)
             rooms[room] = {"members": 0, "messages": []}
-
-            #创建这个room的thread，3个，对应1 manager+2 assistants
-            # socketio.start_background_task(target=create_all_assistant, room=room,thread_name=THREAD_ARR[0])
-            # socketio.start_background_task(target=create_all_assistant, room=room, thread_name=THREAD_ARR[1])
-            # socketio.start_background_task(target=create_all_assistant, room=room, thread_name=THREAD_ARR[2])
-            # await create_all_assistant(room, THREAD_ARR[0])
-            # await create_all_assistant(room, THREAD_ARR[1])
-            # await create_all_assistant(room, THREAD_ARR[2])
-            # executor.submit(create_all_assistant, room=room, thread_name=THREAD_ARR[0])
-            # executor.submit(create_all_assistant, room=room, thread_name=THREAD_ARR[1])
-            # executor.submit(create_all_assistant, room=room, thread_name=THREAD_ARR[2])
-            print(f"start at {time.strftime('%X')}")
-            # asyncio.create_task(create_all_assistant(room, THREAD_ARR[0]))
-            # print(f"1 at {time.strftime('%X')}")
-            # asyncio.create_task(create_all_assistant(room, THREAD_ARR[1]))
-            # print(f"2 at {time.strftime('%X')}")
-            # asyncio.create_task(create_all_assistant(room, THREAD_ARR[2]))
-            # print(f"end at {time.strftime('%X')}")
             start_assistants_sync(room)
             print(f"end at {time.strftime('%X')}")
-            # 等待所有任务完成
-            # await asyncio.gather(task1, task2, task3)
 
         elif code not in rooms:
             return render_template("home.html", error="Room does not exist.", code=code, name=name)
         
         session["room"] = room
         session["name"] = name
+        print(session.get("name"))
         return redirect(url_for("room"))
 
     return render_template("home.html")
 
 def create_all_assistant(room, thread_name):
     thread_new = create_thread_ai_assistant()
-
     save_constant_to_csv(room, thread_name, thread_new)
 
 def start_assistants_sync(room):
@@ -408,7 +388,7 @@ def message(data):
     thread_assistant_1 = thread_map[THREAD_ARR[1]]
     thread_assistant_2 = thread_map[THREAD_ARR[2]]
     round = 0
-    next_speaker = ""
+
     while True:
         round = round+1
         if round >= 4 :

@@ -27,6 +27,14 @@
 <script type="text/javascript">
   var socketio = io();
 
+  socketio.on('connect', () => {
+      console.log('Connected to server');
+  });
+
+  socketio.on('disconnect', () => {
+      console.error('Disconnected from server');
+      setTimeout(() => socketio.connect(), 1000); // 重连
+  });
   const messages = document.getElementById("messages");
 
   const createMessage = (name, msg, time, type = 'text') => {
@@ -62,6 +70,7 @@
 <script type="text/javascript">
   createMessage("{{ msg.name }}", "{{ msg.message }}", "{{ msg.timestamp }}", "{{ msg.type }}");
 </script>
+
 {% endfor %}
 
 {% endblock %}

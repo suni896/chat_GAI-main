@@ -25,7 +25,7 @@
 </div>
 
 <script type="text/javascript">
-  var socketio = io();
+  var socketio = io({transports: ['websocket', 'polling']});
 
   socketio.on('connect', () => {
       console.log('Connected to server');
